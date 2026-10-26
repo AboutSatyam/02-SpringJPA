@@ -13,7 +13,7 @@ public interface IVaccineService {
 
     public long vaccineCount();
 
-    public Boolean checkVaccineAvailabulity(Integer id);
+    public Boolean checkVaccineAvailablity(Integer id);
 
     public Iterable<Vaccine> getAllVaccineInfo();
 
