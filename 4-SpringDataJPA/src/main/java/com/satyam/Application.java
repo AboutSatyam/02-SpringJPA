@@ -1,9 +1,12 @@
 package com.satyam;
 
+import com.satyam.entity.Vaccine;
 import com.satyam.service.VaccineService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+
+import java.util.Optional;
 
 @SpringBootApplication
 public class Application {
@@ -28,7 +31,7 @@ public class Application {
 //        vaccines.add(new Vaccine("Jeev", "Indian Immunologicals", 100.00));
 //        vaccines.add(new Vaccine("Pentavac", "Serum Institute of India", 500.00));
 //        vaccines.add(new Vaccine("Easyfive-TT", "Panacea Biotec", 450.00));
-//        vaccines.add(new Vaccine("Shan5", "Shantha Biotechnics", 400.00));
+//        vaccines.add(new Vaccine("Shan5", "Shantha Biotechnics", 4x   00.00));
 //        vaccines.add(new Vaccine("Hepatitis B Vaccine", "Indian Immunologicals", 200.00));
 //        vaccines.add(new Vaccine("Polio Vaccine", "WHO", 783.40));
 //
@@ -51,7 +54,22 @@ public class Application {
 //            System.out.println("Not Available Id " + id);
 
 
-        vacs.getAllVaccineInfo().forEach(v -> System.out.println(v));
+//        vacs.getAllVaccineInfo().forEach(v -> System.out.println(v));
+//
+//        List<Integer> ids = new ArrayList<>();
+//        ids.add(2);
+//        ids.add(3);
+//
+//        vacs.getAllVaccine(ids).forEach(v -> System.out.println(v));
+
+        Integer id = 12 ;
+//        vacs.getVaccineById(id);
+//
+        Optional<Vaccine> opt = vacs.getVaccineById(id);
+        if (opt.isPresent()) {
+            System.out.println("Present " + opt.get());
+        } else
+            System.out.println("Record is not present with this id " + id);
     }
 
 }
