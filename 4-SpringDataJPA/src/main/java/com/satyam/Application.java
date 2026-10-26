@@ -62,7 +62,7 @@ public class Application {
 //
 //        vacs.getAllVaccine(ids).forEach(v -> System.out.println(v));
 
-        Integer id = 12 ;
+        Integer id = 12;
 //        vacs.getVaccineById(id);
 //
         Optional<Vaccine> opt = vacs.getVaccineById(id);
