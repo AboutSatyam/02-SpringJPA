@@ -6,6 +6,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @SpringBootApplication
@@ -37,8 +39,8 @@ public class Application {
 //
 //        vacs.registerMultipleVaccineInfo(vaccines).forEach(v -> System.out.println(v));
 
-        Long count = vacs.vaccineCount();
-        System.out.println("Vaccine Available Is : " + count);
+//        Long count = vacs.vaccineCount();
+//        System.out.println("Vaccine Available Is : " + count);
 
 //        Scanner input = new Scanner(System.in);
 //        System.out.println("Ente The Is Yoyu Want To Search The Vaccine Availability : ");
@@ -54,7 +56,7 @@ public class Application {
 //            System.out.println("Not Available Id " + id);
 
 
-//        vacs.getAllVaccineInfo().forEach(v -> System.out.println(v));
+        //       vacs.getAllVaccineInfo().forEach(v -> System.out.println(v));
 //
 //        List<Integer> ids = new ArrayList<>();
 //        ids.add(2);
@@ -62,14 +64,33 @@ public class Application {
 //
 //        vacs.getAllVaccine(ids).forEach(v -> System.out.println(v));
 
-        Integer id = 12;
+        Integer id = 13;
 //        vacs.getVaccineById(id);
 //
+
         Optional<Vaccine> opt = vacs.getVaccineById(id);
         if (opt.isPresent()) {
             System.out.println("Present " + opt.get());
-        } else
-            System.out.println("Record is not present with this id " + id);
+        } else System.out.println("Record is not present with this id " + id);
+
+//        String opt1 = vacs.removeVaccineById(id);
+//        System.out.println(opt);
+
+//        Vaccine vac1 = new Vaccine("Covishield", "Serum Institute of India", 300.00);
+//        vac1.setId(1);
+
+//        String strr = vacs.removeVaccineByVaccine(vac1);
+//        System.out.println(strr);
+//        vacs.getAllVaccineInfo().forEach(v -> System.out.println(v));
+
+        List<Integer> ids = new ArrayList<>();
+        ids.add(2);
+        // ids.add(1);
+        ids.add(3);
+        String str5 = vacs.removeAllVaccines(ids);
+        System.out.println(str5);
+        vacs.getAllVaccineInfo().forEach(v -> System.out.println(v));
+
     }
 
 }
