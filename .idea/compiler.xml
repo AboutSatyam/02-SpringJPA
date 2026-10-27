@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="6-SpringDataJPA" />
         <module name="3-SpringDataJPA" />
         <module name="4-SpringDataJPA" />
         <module name="5-SpringDataJPA" />
@@ -21,6 +22,7 @@
       <module name="3-SpringDataJPA" options="-parameters" />
       <module name="4-SpringDataJPA" options="-parameters" />
       <module name="5-SpringDataJPA" options="-parameters" />
+      <module name="6-SpringDataJPA" options="-parameters" />
     </option>
   </component>
 </project>
