@@ -41,7 +41,7 @@ public class Vaccine {
     }
 
     public String getVaccineCompany() {
-        return vaccineCompany;
+        return vaccineCompany ;
     }
 
     public void setVaccineCompany(String vaccineCompany) {
