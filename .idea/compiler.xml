@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="3-SpringDataJPA" />
         <module name="4-SpringDataJPA" />
+        <module name="5-SpringDataJPA" />
         <module name="1-SpringJDBC" />
         <module name="2-SpringDataJDBC" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="2-SpringDataJDBC" options="-parameters" />
       <module name="3-SpringDataJPA" options="-parameters" />
       <module name="4-SpringDataJPA" options="-parameters" />
+      <module name="5-SpringDataJPA" options="-parameters" />
     </option>
   </component>
 </project>
