@@ -1,10 +1,10 @@
 package com.satyam.service;
 
-import com.satyam.view.IResultView;
+import view.View;
 
 import java.util.List;
 
 public interface IVaccineService {
 
-    public List<IResultView> fetchByCost(Double cost);
+    public <T extends View> List<T> fetchByCostLessThan(Double cost, Class<T> cls);
 }

@@ -15,14 +15,14 @@ public class Application {
         ConfigurableApplicationContext con = SpringApplication.run(Application.class, args);
         VaccineService vacs = con.getBean(VaccineService.class);
 
-//        vacs.fetchDetailsBYSorting(true, "vaccineName", "vaccineCompany")
-//                .forEach(v -> System.out.println(v.getVaccineName() + "-------------- " + v.getVaccineCompany()));
-//
-//        vacs.fetchDetailsBYPagination(1, 3, true, "vaccineName", "vaccineCompany")
-//                .forEach(v -> System.out.println(v.getVaccineName() + "-------------- " + v.getVaccineCompany()));
-//
-//        vacs.fetchDetailsBYPagination(3);
-//
+        vacs.fetchDetailsBYSorting(true, "vaccineName", "vaccineCompany")
+                .forEach(v -> System.out.println(v.getVaccineName() + "-------------- " + v.getVaccineCompany()));
+
+        vacs.fetchDetailsBYPagination(1, 3, true, "vaccineName", "vaccineCompany")
+                .forEach(v -> System.out.println(v.getVaccineName() + "-------------- " + v.getVaccineCompany()));
+
+        vacs.fetchDetailsBYPagination(3);
+
 //        Vaccine vac = vacs.searchVaccineById(7);
 //
 //        System.out.println(vac);
@@ -30,12 +30,12 @@ public class Application {
 //        vac1.setId(9);
 //        vacs.searchVaccineByGivenInfo(vac1).forEach(v -> System.out.println(v));
 
-        List<Integer> ids = new ArrayList<>();
-        ids.add(6);
-        ids.add(7);
-        ids.add(8);
-        String Status = vacs.removeVaccineInfoByIds(ids);
-        System.out.println(Status);
+//        List<Integer> ids = new ArrayList<>();
+//        ids.add(6);
+//        ids.add(7);
+//        ids.add(8);
+//        String Status = vacs.removeVaccineInfoByIds(ids);
+//        System.out.println(Status);
 
     }
 }
