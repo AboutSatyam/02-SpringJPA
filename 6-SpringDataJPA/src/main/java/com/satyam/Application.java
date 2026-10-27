@@ -1,10 +1,12 @@
 package com.satyam;
 
-import com.satyam.entity.Vaccine;
 import com.satyam.service.VaccineService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class Application {
@@ -24,9 +26,16 @@ public class Application {
 //        Vaccine vac = vacs.searchVaccineById(7);
 //
 //        System.out.println(vac);
+//        Vaccine vac1 = new Vaccine("Pentavac", "Serum Institute of India", 500.0);
+//        vac1.setId(9);
+//        vacs.searchVaccineByGivenInfo(vac1).forEach(v -> System.out.println(v));
 
-        Vaccine vac1 = new Vaccine("Pentavac", "Serum Institute of India", 500.0);
-        vac1.setId(9);
-        vacs.searchVaccineByGivenInfo(vac1).forEach(v -> System.out.println(v));
+        List<Integer> ids = new ArrayList<>();
+        ids.add(6);
+        ids.add(7);
+        ids.add(8);
+        String Status = vacs.removeVaccineInfoByIds(ids);
+        System.out.println(Status);
+
     }
 }

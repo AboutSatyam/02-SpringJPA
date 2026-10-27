@@ -40,7 +40,7 @@ public class VaccineService implements IVaccineService {
     }
 
     @Override
-    public Boolean checkVaccineAvailabulity(Integer id) {
+    public Boolean checkVaccineAvailablity(Integer id) {
         return repo.existsById(id);
     }
 
