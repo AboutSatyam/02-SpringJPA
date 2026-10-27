@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class VaccineService implements IVaccineService {
 
-    // @Autowired
     private IVaccineRepo repo;
 
     @Autowired
