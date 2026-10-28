@@ -8,18 +8,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="6-SpringDataJPA" />
         <module name="3-SpringDataJPA" />
+        <module name="9-SpringDataJPA_CustomFInder" />
         <module name="7-SpringDataJPA" />
         <module name="8-SpringDataJPA" />
         <module name="4-SpringDataJPA" />
         <module name="5-SpringDataJPA" />
+        <module name="10-SpringDataJPA_2CustomQuery" />
         <module name="1-SpringJDBC" />
         <module name="2-SpringDataJDBC" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="10SpringDataJPA_CustomQuery" target="25" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="1-SpringJDBC" options="-parameters" />
+      <module name="10-SpringDataJPA_2CustomQuery" options="-parameters" />
+      <module name="10SpringDataJPA_CustomQuery" options="-parameters" />
       <module name="2-SpringDataJDBC" options="-parameters" />
       <module name="3-SpringDataJPA" options="-parameters" />
       <module name="4-SpringDataJPA" options="-parameters" />
@@ -27,6 +34,7 @@
       <module name="6-SpringDataJPA" options="-parameters" />
       <module name="7-SpringDataJPA" options="-parameters" />
       <module name="8-SpringDataJPA" options="-parameters" />
+      <module name="9-SpringDataJPA_CustomFInder" options="-parameters" />
     </option>
   </component>
 </project>

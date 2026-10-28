@@ -4,6 +4,7 @@ import com.satyam.entity.Vaccine;
 import com.satyam.repo.IVaccineRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -43,12 +44,12 @@ public class VaccineService implements IVaccineService {
         return "Unable To Delete ";
     }
 
-//    @Override
-//    public List<Vaccine> searchVaccineByGivenInfo(Vaccine vac, Boolean status, String... params) {
-//
-//        Sort.by(status ? Sort.Direction.ASC : Sort.Direction.DESC, params);
-//        return List.of();
-//    }
+    @Override
+    public List<Vaccine> searchVaccineByGivenInfo(Vaccine vac, Boolean status, String... params) {
+
+        Sort.by(status ? Sort.Direction.ASC : Sort.Direction.DESC, params);
+        return List.of();
+    }
 
 }
 

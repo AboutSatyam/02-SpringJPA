@@ -11,4 +11,5 @@ public interface IVaccineService {
 
     public String removeVaccineInfoByIds(Iterable<Integer> ids);
 
+    List<Vaccine> searchVaccineByGivenInfo(Vaccine vac, Boolean status, String... params);
 }
