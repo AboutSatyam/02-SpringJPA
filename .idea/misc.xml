@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/9-SpringDataJPA_CustomFInder/pom.xml" />
         <option value="$PROJECT_DIR$/10SpringDataJPA_CustomQuery/pom.xml" />
         <option value="$PROJECT_DIR$/10-SpringDataJPA_2CustomQuery/pom.xml" />
+        <option value="$PROJECT_DIR$/11-SpringDataMongoDB/pom.xml" />
       </list>
     </option>
   </component>
